@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:map_example/screens/home/home_view.dart';
+import 'package:map_example/screens/main/views/main_view.dart';
 
 class MyRoute {
   static final MyRoute _instance = MyRoute.init();
@@ -10,8 +10,7 @@ class MyRoute {
     var args = settings.arguments;
     switch (settings.name) {
       case "/home":
-        return easynavigate(HomeView());
-       
+        return easynavigate(MainView());
     }
   }
     easynavigate(Widget page) => MaterialPageRoute(builder: (context) => page);
